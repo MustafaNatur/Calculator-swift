@@ -9,11 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var LabelDisplay: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        LabelDisplay.text = ""
     }
 
-
+    @IBAction func NumberButtonPressed(_ sender: UIButton) {
+        LabelDisplay.text! += String(sender.tag)
+    }
 }
 
