@@ -63,13 +63,17 @@
                                                     <action selector="NumberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLH-8W-iWn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmE-XP-yff">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK4-0G-Oow">
                                                 <rect key="frame" x="0.0" y="420.66666666666663" width="103.66666666666667" height="105.33333333333337"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="31"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal">
+                                                <state key="normal" title="⚙️">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="NumberButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPh-zF-QSw"/>
+                                                    <segue destination="V53-p3-RVq" kind="show" id="UZS-tc-4ii"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -297,8 +301,27 @@
             </objects>
             <point key="canvasLocation" x="35" y="98"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="h6D-DB-fSv">
+            <objects>
+                <viewController id="V53-p3-RVq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3lL-hd-QH2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tQg-GE-fSp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R3n-ri-x0u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VlK-n8-SgE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="98"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
